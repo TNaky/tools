@@ -1,5 +1,5 @@
 diff --git a/usr/share/doc/python2.7/examples/Tools/scripts/ptags.py b/./ptags.py
-index 52b3ee9..0031868 100755
+index 52b3ee9..001d37e 100755
 --- a/usr/share/doc/python2.7/examples/Tools/scripts/ptags.py
 +++ b/./ptags.py
 @@ -15,9 +15,16 @@ import sys, re, os
