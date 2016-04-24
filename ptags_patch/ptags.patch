@@ -1,0 +1,24 @@
+diff --git a/usr/share/doc/python2.7/examples/Tools/scripts/ptags.py b/./ptags.py
+index 52b3ee9..0031868 100755
+--- a/usr/share/doc/python2.7/examples/Tools/scripts/ptags.py
++++ b/./ptags.py
+@@ -15,9 +15,16 @@ import sys, re, os
+ tags = []    # Modified global variable!
+ 
+ def main():
+-    args = sys.argv[1:]
+-    for filename in args:
+-        treat_file(filename)
++    # args = sys.argv[1:]
++    # for filename in args:
++        # treat_file(filename)
++    xdir = os.walk(sys.argv[1])
++    for xpath, dirs, files in xdir:
++      for xfile in files:
++        fname, ext = os.path.splitext(xfile)
++        if '.py' == ext:
++          filename = os.paht.join(xpath, xfile)
++          treat_file(filename)
+     if tags:
+         fp = open('tags', 'w')
+         tags.sort()
