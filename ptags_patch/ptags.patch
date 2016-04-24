@@ -17,7 +17,7 @@ index 52b3ee9..0031868 100755
 +      for xfile in files:
 +        fname, ext = os.path.splitext(xfile)
 +        if '.py' == ext:
-+          filename = os.paht.join(xpath, xfile)
++          filename = os.path.join(xpath, xfile)
 +          treat_file(filename)
      if tags:
          fp = open('tags', 'w')
